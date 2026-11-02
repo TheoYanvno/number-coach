@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.coach {
+  box-sizing: border-box;
+  width: min(560px, 100%);
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.muted { color: #94a3b8; }
+.small { font-size: .9rem; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.guess-row {
+  display: flex;
+  gap: 8px;
+}
+
+.guess-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: inherit;
+}
+
+.guess-row button, .report button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.answer {
+  font-size: 1.3rem;
+  font-weight: 700;
+  min-height: 1.6em;
+}
+
+.range {
+  position: relative;
+  height: 14px;
+  border-radius: 7px;
+  background: #1e293b;
+  overflow: hidden;
+}
+
+.range span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #38bdf8;
+}
+
+.moves {
+  padding-left: 1.4em;
+}
+
+.moves li {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #1e293b;
+}
+
+.grade {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.grade.best { background: #4ade80; }
+.grade.good { background: #a3e635; }
+.grade.risky { background: #facc15; }
+.grade.wasted { background: #f87171; }
+
+.report {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #1e293b;
+  border: 1px solid #38bdf8;
+}

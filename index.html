@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Number Coach</title>
+  <meta name="description" content="Guess the number from 1 to 100 while a coach grades every guess and explains why.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="coach">
+    <h1>🎯 Number Coach</h1>
+    <p class="muted">I'm thinking of a number from 1 to 100. Guess it, and I'll coach every guess.</p>
+    <form id="guessForm" class="guess-row">
+      <label for="guess" class="sr-only">Your guess</label>
+      <input id="guess" type="number" min="1" max="100" placeholder="Your guess" autocomplete="off">
+      <button type="submit">Guess</button>
+    </form>
+    <p id="answer" class="answer" aria-live="polite"></p>
+    <div id="range" class="range" aria-hidden="true"></div>
+    <p id="rangeText" class="muted small"></p>
+    <ol id="moves" class="moves"></ol>
+    <section id="report" class="report" hidden></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
